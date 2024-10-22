@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: #111;
+  color: #fff;
+}
+
+header {
+  padding: 10px;
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .9);
+}
+
+header img {
+  width: 110px;
+  height: 60px;
+}
+
+header h1 {
+  font-family: 'Macondo Swash Caps', sans-serif;
+  font-size: 2rem;
+  color: #d4d4d4;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+  margin-right: 30px;
+}
+
+header nav ul li {
+  cursor: pointer;
+}
+
+header nav ul li:hover {
+  text-decoration: underline;
+}
+
+main {
+  width: 100%;
+}
+
+main .banner  {
+  z-index: -1000;
+  width: 100%;
+  position: relative;
+}
+
+main .banner img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  z-index: -1000;
+}
+
+main .banner .infos {
+  position: absolute;
+  width: 30%;
+  top: 50px;
+  left: 30px;
+  background: #ffffff59;
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 0.925rem;
+  color: #111;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+}
+
+main .banner .infos button {
+  width: 100px;
+  background: #111;
+  padding: 5px;
+  margin-top: 10px;
+  align-self: center;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+main .banner .infos button:hover {
+  background: #000;
+}
+
+main .separator {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 150px;
+}
+
+main .separator h2 {
+  font-family: 'Macondo Swash Caps', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+main .separator p {
+  font-family: 'Macondo Swash Caps', sans-serif;
+  font-size: 1.5rem;
+}
+
+main .dragons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 10px;
+}
+
+main .dragons .section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+main .dragons .section .card {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  background: #000;
+  max-width: 48%;
+  align-items: center;
+  border-radius: 12px;
+}
+
+main .dragons .section .card img {
+  border-radius: 12px 12px 0 0;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+main .dragons .section .card .infos {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .dragons .section .card .infos h3 {
+  font-family: 'Macondo Swash Caps', sans-serif;
+  font-size: 1.5rem;
+}
+
+main .dragons .section .card .infos p {
+  font-size: 0.9rem;
+}
+
+footer {
+  width: 100%;
+  background: #000;
+  display: flex;
+  justify-content: center;
+}
+
+footer a {
+  color: #fff;
+  font-weight: bolder;
+}
